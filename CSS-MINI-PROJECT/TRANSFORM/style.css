@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    transform: translateX(70vw);
+    animation: myRotateScale 1s ease  alternate-reverse infinite;
+}
+
+@keyframes myRotateScale {
+    to {
+        transform: translateX(80vw) rotate(360deg) scale(5);
+    }
+}

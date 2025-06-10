@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+        body {
+            background-color: #000;
+            font-family: "Noto Sans", sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
+p, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.card {
+    max-width: 300px;
+    background: rgb(65, 64, 64);
+    margin: auto;
+    padding: 1rem;
+}
+
+.image-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-avatar img{
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+.card, img {
+    border-radius: 10px;
+}
+
+.card-body {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.card-details h3{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.card-details p {
+    font-size: 0.85rem;
+    color: grey;
+}
+
+.card-details {
+    line-height: 1.5;
+}
+
+.card-stats {
+    display: none;
+}
+
+.card-stats li {
+    background: black;
+    padding: .25rem .5rem;
+    margin-right: .5rem;
+    border-radius: 5px;
+}
+
+.card:hover .card-stats {
+    display: flex;
+    margin-top: 1rem;
+}

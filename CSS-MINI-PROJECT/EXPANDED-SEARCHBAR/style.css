@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        background-color: #000;
+    }
+}
+
+.container {
+    max-width: 320px;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 30%;
+    padding: 1rem;
+    border: 2px solid #808080;
+    border-radius: .5rem;
+    transition: all .2s;
+}
+
+.search-bar:focus {
+    width: 100%;
+}
+
+.search-bar::placeholder {
+    font-weight: 200;
+}
+
+.search-bar:focus::placeholder {
+    color: transparent;
+}

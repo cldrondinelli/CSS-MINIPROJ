@@ -1,0 +1,38 @@
+:root {
+    --text-color:white;
+    --bg-color:black;
+    --nav-color:grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+        body { 
+            background-color: var(--bg-color);
+        }
+}
+
+nav {
+    padding: 2em 4em;
+    background: var(--nav-color);
+}
+
+.navbar-links {
+    float: right;
+    position: relative;
+    bottom: .6em;
+}
+
+.link-item, a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 10px;
+}
+
+.link-item:hover {
+    color: black;
+}

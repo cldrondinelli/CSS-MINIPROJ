@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+        body {
+            background-color: var(--bg-color);
+            font-family: "Karla", sans-serif;
+        }
+}
+
+:root {
+    --color-text: hsl(0, 100%, 100%);
+    --color-text-one:hsl(0, 2%, 67%);
+    --bg-color:hsl(0, 100%, 0%);
+    --grad-color-one:hsl(311, 100%, 37%);
+    --grad-color-two:hsl(58, 83%, 46%);
+    --grad-color-three:hsl(40, 100%, 47%);
+    --grad-color-four:hsl(0, 99%, 46%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-border {
+    background: linear-gradient(115deg, hsl(311, 100%, 37%), hsl(58, 83%, 46%), hsl(40, 100%, 47%), hsl(0, 99%, 46%) );
+    padding: 3px;
+}
+
+
+.button {
+    border: none;
+    color: var(--color-text);
+    background: var(--bg-color);
+    padding: 1em 1.5em;
+    font-size: 1rem;
+    font-family: inherit;
+    letter-spacing: .1em;
+    cursor: pointer;
+    /*border-image: linear-gradient(115deg, hsl(311, 100%, 37%), hsl(58, 83%, 46%), hsl(40, 100%, 47%), hsl(0, 99%, 46%) );
+    border-image-slice: 1;*/
+}
+
+.btn-border:hover {
+    background: linear-gradient(230deg, hsl(311, 100%, 37%), hsl(58, 83%, 46%), hsl(40, 100%, 47%), hsl(0, 99%, 46%) );;
+}
+
+.btn-border:hover .button {
+    color: var(--color-text-one);
+    padding: 1.2em 1.7em;
+}
